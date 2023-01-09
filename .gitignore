@@ -30,3 +30,4 @@ hs_err_pid*
 certificates
 
 .java-version
+package-lock.json
