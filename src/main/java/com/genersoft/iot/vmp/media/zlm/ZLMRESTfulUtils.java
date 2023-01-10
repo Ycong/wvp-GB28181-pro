@@ -34,9 +34,9 @@ public class ZLMRESTfulUtils {
             OkHttpClient.Builder httpClientBuilder = new OkHttpClient.Builder();
             //todo 暂时写死超时时间 均为5s
             // 设置连接超时时间
-            httpClientBuilder.connectTimeout(5,TimeUnit.SECONDS);
+            httpClientBuilder.connectTimeout(10,TimeUnit.SECONDS);
             // 设置读取超时时间
-            httpClientBuilder.readTimeout(5,TimeUnit.SECONDS);
+            httpClientBuilder.readTimeout(10,TimeUnit.SECONDS);
             // 设置连接池
             httpClientBuilder.connectionPool(new ConnectionPool(16, 5, TimeUnit.MINUTES));
             if (logger.isDebugEnabled()) {
